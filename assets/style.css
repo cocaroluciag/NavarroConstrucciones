@@ -1,0 +1,445 @@
+html,body {
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+	background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+	font-family: 'Poppins', sans-serif;
+    min-height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la pantalla */
+    background-color: #000000;
+}
+
+.special-gothic-condensed-one-regular {
+	font-family: "Special Gothic Condensed One", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+  
+  .abril-fatface-regular {
+	font-family: "Abril Fatface", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* Títulos */
+h1, h2, h3, h4 {
+    margin: 0;
+    line-height: 1em;
+}
+h1 {
+    font: 700 5em Roboto, Arial, Helvetica;
+    margin: 0.25em 0;
+    text-transform: uppercase;
+}
+h2 {
+    font: 300 2.5em 'Poppins', sans-serif;
+    margin-bottom: 3em;
+    padding-top: 80px;
+}
+h3 {
+    font: 300 2em 'Abril Fatface', serif;
+    margin: 2em 0 1em 0;
+}
+h4 {
+    font: 300 1.5em 'Abril Fatface', serif;
+    margin-bottom: 3em;
+	font-size: 30px;
+}
+h4 i {
+    margin-right: 0.5em;
+}
+
+/* Párrafos */
+p {
+    font-size: 1em 'Poppins', sans-serif;
+    line-height: 1.7em;
+    margin-bottom: 4em;
+}
+
+/* Espaciado */
+.spacer {
+    padding: 6em 0;
+}
+
+.menu-image {
+    height: 100%;
+    max-height: 100px;
+    margin-right: 20px;
+}
+
+/* Navbar */
+.mi-navbar {
+    background-color: #ed0000;
+}
+
+.mi-navbar .nav-link {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.mi-navbar .nav-link:hover {
+    color: #000000;
+}
+
+.navbar-brand{
+    height: 10px;
+}
+
+.navbar-nav > li > a {
+    font-size: 1em;
+    line-height: 3.6em;
+}
+
+.navbar-fixed-top {
+    top: 5px;
+}
+
+.container-services{
+    background:#000000;
+	color: #ffffff;
+	min-height: 100vh; 
+}
+
+.container-services h3{
+	font-weight: bold;
+	margin-top: 190px;
+}
+
+.container-services2 h3{
+	font-weight: bold;
+
+}
+
+/* Carrusel */
+#head, .carousel {
+    margin-top: 0;
+}
+#home {
+    padding-top: 6em;
+}
+.carousel-caption {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+}
+.caption-wrapper {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.caption-info {
+    display: table-cell;
+    vertical-align: middle;
+}
+.caption-info p {
+    font-size: 1.25em;
+}
+.caption-info .btn i {
+    margin-right: 0.75em;
+}
+.carousel-inner > .item > img, 
+.carousel-inner > .item > a > img {
+    width: 30%;
+    height: 20%;
+}
+.carousel-control {
+    z-index: 1000;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color:#000000;
+    border-radius: 50%;
+}
+
+.carousel-inner {
+    margin-top: 50px;    
+}
+
+/* CARROUSELES */
+.carousel2-inner {
+    margin-left: 800px;
+    margin-right: 0;
+    width: 110%;
+    margin-top: 50px;
+}
+
+h5 {
+	margin-bottom: 25px; /* Añadir un margen inferior entre los h5 */
+}
+
+#carrusel1 .carousel-item img {
+    max-width: 57%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#carrusel-inner .carousel-caption {
+    bottom: 40px;
+    margin-left: 400px;
+    color: #000000;
+}
+
+#carrusel2 .carousel-caption {
+    bottom: 30px;
+    margin-left: 400px;
+    color: #000000;
+}
+
+#carrusel3 .carousel-caption {
+    bottom: 20px;
+    margin-left: 400px;
+    color: #000000;
+    margin-right: 3000px;
+    margin-top: 300px;
+}
+
+.carousel3-inner {
+    margin-right: 800px;
+    margin-left: 0;
+    width: 110%;
+    margin-top: 300px;
+}
+
+/* About */
+.about.spacer {
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+.process ul li span {
+    line-height: 2em;
+    display: inline-block;
+    font-weight: 300;
+}
+.process ul li span i {
+    font-size: 3em;
+}
+.process ul li span b {
+    display: block;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+/* Works */
+#works {
+    padding-top: 6em;
+}
+#works figcaption a {
+    border: 1px solid #fff;
+    margin-top: 1em;
+    display: inline-block;
+    color: #fff;
+    padding: 0 2em;
+	text-align: center;
+}
+
+.figcaption p {
+	color: white; /* Cambiar color del texto a blanco */
+}
+
+#works figcaption a:hover {
+    text-decoration: none;
+    padding: 0 3em;
+}
+
+.effect-chico {
+	position: relative;
+	text-align: center;
+	font-size: 22px;
+}
+    
+  .text-bold {
+	font-weight: bold;
+	text-align: center;
+}  
+
+/* Team */
+.team figure {
+    width: 100%;
+}
+.team img {
+    width: 100%;
+}
+.team b {
+    font-size: 1.2em;
+    display: block;
+}
+
+/* Contact */
+.contactform textarea, .contactform input {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #ccc;
+    margin-bottom: 1em;
+    border-radius: 0;
+    outline: none;
+}
+
+/* Footer */
+.contenedor-footer {
+	margin-top: 100px;
+	text-align: center;
+	padding: 0;
+	margin-bottom: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+  
+.footer {
+	width: 100%;
+	color: #ffffff;
+	text-align: center;
+	padding: 50px 20px; /* 50px arriba/abajo, 20px a los costados */
+	min-height: 200px; /* altura mínima */
+	margin: 0;
+	box-sizing: border-box; /* Asegura que el padding no rompa el 100% */
+}
+  
+.footer a {
+	color: #aaa;
+	background: #000000;
+}  
+
+.info-contacto {
+    color: #ffffff;
+    background-color: #000000;
+	font-weight: bold;
+	font-size: 4px;
+	margin-bottom: 1px;
+    display: flex; /*  Esto pone los hijos en fila */
+    justify-content: center; /*  Esto centra todo horizontalmente */
+    flex-wrap: wrap; /*  Por si no entra todo en una sola línea */
+    gap: 20px; /*  Espacio entre cada dato */
+    padding: 20px 0; /* Opcional, espacio arriba y abajo */
+	line-height:1.0; 
+}
+
+.derechos {
+    background-color: #000000;
+    color: #fff;
+    text-align:center;
+    padding: 15px 0;
+    font-size: 16px;
+	font-weight: bold;
+}  
+
+/* Botón para volver arriba */
+.gototop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0,0,0,0.5);
+    padding: 10px;
+    color: #fff;
+}
+.gototop i {
+    line-height: 0.5em;
+}
+
+/* Estilo para el ícono de WhatsApp */
+.whatsapp-icon {
+	position: fixed;
+	bottom: 20px;
+	right: 10px;
+	width: 80px;
+    height: 80px;
+	border-radius: 50%;
+	padding: 15px;
+	font-size: 10px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	z-index: 1000; /* Asegura que el ícono esté encima de otros elementos */
+	transition: all 0.3s ease;
+}
+
+.whatsapp-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+} 
+
+/* Responsivo */
+@media (max-width: 1200px) {
+    body {
+        font: 300 13px/13px Roboto, Arial, Helvetica;
+    }
+    .navbar-brand {
+        padding-top: 11px;
+    }
+    .process ul li {
+        margin: 0 0.5em;
+    }
+    .grid figure h2 {
+        font: 700 1.5em Roboto, Arial, Helvetica;
+    }
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font: 700 3.5em Roboto, Arial, Helvetica;
+    }
+    h4 {
+        font: 300 1.3em Roboto, Arial, Helvetica;
+    }
+    .btn {
+        padding: 1em 2em;
+    }
+    .partners img {
+        margin: 0 15px 25px 0;
+        width: 157px;
+    }
+    .process ul li {
+        width: 9em;
+        height: 9em;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        font: 300 12px/12px Roboto, Arial, Helvetica;
+    }
+    .navbar-nav > li > a {
+        line-height: 1em;
+    }
+    .navbar-brand {
+        padding: 7px;
+    }
+    .navbar-toggle {
+        margin-top: 12px;
+    }
+    .carousel-caption, .carousel-control, .carousel-indicators {
+        display: none;
+    }
+    h2.text-center {
+        text-align: left;
+        font-size: 1.7em;
+    }
+    .partners img {
+        width: 120px;
+    }
+    .about.spacer {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .spacer {
+        padding: 2em 0 0 0;
+    }
+    .footer {
+        margin-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .carousel-inner img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        filter: invert(100%);
+    }
+}
