@@ -117,7 +117,7 @@ p {
     top: 5px;
 }
 
-.container-services{
+.container-services2{
     background:#000000;
 	color: #ffffff;
 	min-height: 100vh; 
@@ -130,7 +130,6 @@ p {
 
 .container-services2 h3{
 	font-weight: bold;
-
 }
 
 /* Carrusel */
@@ -262,6 +261,34 @@ p {
 	color: white; /* Cambiar color del texto a blanco */
 }
 
+figure.effect-chico {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  figure.effect-chico figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5); /* opcional, para dar contraste */
+    text-align: center;
+  }
+  
+  figure.effect-chico figcaption p {
+    color: white; /* o el color que prefieras */
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+  }  
+
 #works figcaption a:hover {
     text-decoration: none;
     padding: 0 3em;
@@ -386,6 +413,43 @@ footer {
 } 
 
 
+@media (max-width: 768px) {
+    .galeria {
+      display: flex;
+      flex-direction: column; /* Organiza verticalmente */
+      align-items: center;    /* Centra horizontalmente */
+    }
+  
+    .galeria img {
+      width: 90%;   /* Ajusta el ancho para que no sea muy grande en celular */
+      margin-bottom: 20px; /* Espacio entre imágenes */
+    }
+}  
+
+@media (max-width: 768px) {
+    .carousel-vertical-mobile {
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      height: 80vh; /* ajustable */
+      scroll-snap-type: y mandatory;
+    }
+  
+    .carousel-vertical-mobile .carousel-item {
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+      transition: none; /* desactiva animación de transición Bootstrap */
+      display: block;
+      width: 100%;
+    }
+  
+    /* Oculta los controles del carrusel en vertical */
+    .carousel-control-prev,
+    .carousel-control-next,
+    .carousel-indicators {
+      display: none !important;
+    }
+  }  
 /* Responsivo */
 @media (max-width: 1200px) {
     body {
