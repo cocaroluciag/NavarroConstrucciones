@@ -425,131 +425,118 @@ footer {
 } 
 
 
-@media (max-width: 768px) {
-    .galeria {
-      display: flex;
-      flex-direction: column; /* Organiza verticalmente */
-      align-items: center;    /* Centra horizontalmente */
-    }
-  
-    .galeria img {
-      width: 90%;   /* Ajusta el ancho para que no sea muy grande en celular */
-      margin-bottom: 20px; /* Espacio entre imágenes */
-    }
-}  
-
-@media (max-width: 768px) {
-    .carousel-vertical-mobile {
-      display: flex;
-      flex-direction: column;
-      overflow-y: auto;
-      height: 80vh; /* ajustable */
-      scroll-snap-type: y mandatory;
-    }
-  
-    .carousel-vertical-mobile .carousel-item {
-      flex: 0 0 auto;
-      scroll-snap-align: start;
-      transition: none; /* desactiva animación de transición Bootstrap */
-      display: block;
-      width: 100%;
-    }
-  
-    /* Oculta los controles del carrusel en vertical */
-    .carousel-control-prev,
-    .carousel-control-next,
-    .carousel-indicators {
-      display: none !important;
-    }
-  }  
-/* Responsivo */
-@media (max-width: 1200px) {
-    body {
-        font: 300 13px/13px 'Poppins', sans-serif;
-        text-align: center;
-    }
-    .navbar-brand {
-        padding-top: 11px;
-    }
-    .process ul li {
-        margin: 0 0.5em;
-    }
-    .grid figure h2 {
-        font: 700 1.5em 'Poppins', sans-serif;
-    }
-}
-
-@media (max-width: 900px) {
+/* Estilos para tablets (pantallas entre 768px y 1024px) */
+@media (max-width: 1024px) {
     h1 {
-        font: 700 3.5em 'Poppins', sans-serif;
+        font-size: 3em;
     }
-    h4 {
-        font: 300 1.3em 'Poppins', sans-serif;
-    }
-    .btn {
-        padding: 1em 2em;
-    }
-    .partners img {
-        margin: 0 15px 25px 0;
-        width: 157px;
-    }
-    .process ul li {
-        width: 9em;
-        height: 9em;
-    }
-}
 
-@media (max-width: 767px) {
-    body {
-        font: 300 12px/12px 'Poppins', sans-serif;
+    h2 {
+        font-size: 2em;
+        margin-bottom: 2em;
     }
-    .navbar-nav > li > a {
-        line-height: 1em;
+
+    .text1, .text2 {
+        margin-right: 0;
+        margin-left: 0;
+        font-size: 14px;
     }
-    .navbar-brand {
-        padding: 7px;
+
+    .logo-img {
+        margin-top: -200px;
+        max-height: 200px;
     }
-    .navbar-toggle {
-        margin-top: 12px;
+
+    .carousel-item img {
+        height: 350px;
     }
-    .carousel-caption, .carousel-control, .carousel-indicators {
-        display: none;
+
+    .carousel2-inner, .carousel3-inner {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
     }
-    h2.text-center {
-        text-align: left;
-        font-size: 1.7em;
+
+    #carrusel-inner .carousel-caption,
+    #carrusel2 .carousel-caption,
+    #carrusel3 .carousel-caption {
+        margin-left: 20px;
+        margin-right: 20px;
+        bottom: 10px;
+        font-size: 0.9em;
     }
-    .partners img {
-        width: 120px;
-    }
+
     .about.spacer {
         padding-left: 2em;
         padding-right: 2em;
     }
-    .spacer {
-        padding: 2em 0 0 0;
+
+    .info-contacto {
+        font-size: 10px;
     }
+}
+
+/* Estilos para móviles (pantallas hasta 767px) */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+        padding-top: 50px;
+        margin-bottom: 1.5em;
+    }
+
+    h3, h4 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .text1, .text2 {
+        margin: 10px;
+        font-size: 13px;
+        padding: 15px;
+    }
+
+    .logo-img {
+        margin: 0 auto;
+        max-height: 150px;
+        display: block;
+    }
+
+    .carousel-item img {
+        height: 250px;
+    }
+
+    .carousel2-inner, .carousel3-inner {
+        margin: 0;
+        width: 100%;
+    }
+
+    #carrusel-inner .carousel-caption,
+    #carrusel2 .carousel-caption,
+    #carrusel3 .carousel-caption {
+        margin: 0 10px;
+        bottom: 5px;
+        font-size: 0.8em;
+    }
+
+    .about.spacer {
+        padding: 1em;
+    }
+
+    .info-contacto {
+        flex-direction: column;
+        font-size: 10px;
+        gap: 10px;
+    }
+
     .footer {
-        margin-top: 2em;
-        padding-bottom: 2em;
+        padding: 20px 10px;
     }
-    .carousel-inner img {
-        height: 200px;
-        object-fit: cover;
-    }
-    .carousel-control-prev,
-    .carousel-control-next {
-        filter: invert(100%);
-    }
-    .whatsapp {
-        width: 80px;
-        height: 80px;
-        font-size: 40px; /* Más grande en celular */
-    }
-    figure.effect-chico {
-        height: 200px; /* Ajusta la altura para pantallas más pequeñas */
-    }
-    figure.effect-chico figcaption {
-        font-size: 14px; /* Reduce el tamaño del texto en pantallas más pequeñas */
+
+    .derechos {
+        font-size: 12px;
     }
 }
