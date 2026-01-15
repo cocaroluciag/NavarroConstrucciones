@@ -276,62 +276,80 @@
       </div>
     </div>
         <!-- Carrusel 3 -->
-        <div class="row align-items-center my-5">
-          <div class="col-md-6">
-            <div id="carrusel3" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="images/portfolio/pileta55.jpeg" class="d-block w-100 img-fluid" alt="Piscina construida 1">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/portfolio/pileta66.jpeg" class="d-block w-100 img-fluid" alt="Piscina construida 2">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/portfolio/pileta77.jpeg" class="d-block w-100 img-fluid" alt="Piscina construida 3">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/portfolio/pileta4.jpeg" class="d-block w-100 img-fluid" alt="Piscina construida 4">
-                  <div class="text-description">Piscina de 7x3, muy buen diseño, playita de 1,5x3 con vereda, atérmicos especiales, y revestimiento de piedras de lujo 10x10. Con detalles y luces alrededor de la piscina.</div>
-                </div>
-                <div class="carousel-item">
-                  <img src="images/portfolio/pileta5.jpeg" class="d-block w-100 img-fluid" alt="Piscina construida 5">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/portfolio/pileta6.jpeg" class="d-block w-100 img-fluid" alt="Piscina construida 6">
-                  <div class="text-description">Piscina 10x4 con vereda atérmica, con escalera medialuna</div>
-                </div>
-                <div class="carousel-item">
-                  <img src="images/portfolio/pileta7.jpeg" class="d-block w-100 img-fluid" alt="Piscina construida 7">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/portfolio/pileta8.jpeg" class="d-block w-100 img-fluid" alt="Piscina construida 8">
-                  <div class="text-description">Piscina 10x5 rectangular con yacuzzi de 3cm. de diámetro</div>
-                </div>
-                <div class="carousel-item">
-                  <img src="images/portfolio/pileta9.jpg" class="d-block w-100 img-fluid" alt="Piscina construida 9">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/portfolio/pileta10.jpg" class="d-block w-100 img-fluid" alt="Piscina construida 10">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/portfolio/pileta11.jpeg" class="d-block w-100 img-fluid" alt="Piscina construida 11">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carrusel3" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carrusel3" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-              </button>
-            </div>
-          </div>
-          <div class="col-md-6 texto-trabajo">
-            <h5>CONSTRUCCIÓN DE PILETAS Y PISCINAS DE MATERIAL </h5>
-          </div>
+         <div class="row align-items-center my-5">
+  <div class="col-md-6">
+    <div id="carrusel3" class="carousel slide" data-bs-touch="false">
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="images/portfolio/pileta55.jpeg" class="d-block w-100 img-fluid">
         </div>
+
+        <div class="carousel-item">
+          <img src="images/portfolio/pileta66.jpeg" class="d-block w-100 img-fluid">
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/portfolio/pileta77.jpeg" class="d-block w-100 img-fluid">
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carrusel3" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carrusel3" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </div>
+
+  <div class="col-md-6 texto-trabajo">
+    <h5>CONSTRUCCIÓN DE PILETAS Y PISCINAS DE MATERIAL</h5>
+  </div>
+</div>
       </div>
     </div>
   </div>
+
+  <div class="row align-items-center my-5">
+  <div class="col-md-6">
+
+    <div id="carruselVideos" class="carousel slide" data-bs-touch="false">
+      <div class="carousel-inner">
+
+        <!-- VIDEO 1 -->
+        <div class="carousel-item active">
+          <video class="d-block w-100 video-slide"
+                 muted
+                 autoplay
+                 playsinline
+                 preload="auto">
+            <source src="images/portfolio/VIDEO2026.mp4" type="video/mp4">
+          </video>
+        </div>
+        <!-- VIDEO 2 -->
+        <div class="carousel-item">
+          <video class="d-block w-100 video-slide"
+                 muted
+                 autoplay
+                 playsinline
+                 preload="auto">
+            <source src="images/portfolio/VIDEO20262.mp4" type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-md-6 texto-trabajo">
+    <h5>VIDEOS DE OBRAS REALIZADAS</h5>
+  </div>
+</div>
+
   </section>
   
   <footer>
@@ -378,3 +396,42 @@
   <script src="assets/script.js"></script> <!-- Tu script para el modal y otras interacciones -->
 </body>
 </html>
+
+<script>
+  const carouselEl = document.getElementById('carruselVideos');
+  const carousel = new bootstrap.Carousel(carouselEl, {
+    interval: false,
+    ride: false
+  });
+
+  function playActiveVideo() {
+    const items = carouselEl.querySelectorAll('.carousel-item');
+    const videos = carouselEl.querySelectorAll('video');
+
+    // Pausar y resetear todos
+    videos.forEach(video => {
+      video.pause();
+      video.currentTime = 0;
+      video.onended = null;
+    });
+
+    // Video activo
+    const activeItem = carouselEl.querySelector('.carousel-item.active');
+    const activeVideo = activeItem ? activeItem.querySelector('video') : null;
+
+    if (activeVideo) {
+      activeVideo.play();
+
+      activeVideo.onended = () => {
+        carousel.next();
+        setTimeout(playActiveVideo, 300);
+      };
+    }
+  }
+
+  // Cuando termina la animación del slide
+  carouselEl.addEventListener('slid.bs.carousel', playActiveVideo);
+
+  // Arrancar el primero
+  window.addEventListener('load', playActiveVideo);
+</script>
